@@ -28,4 +28,7 @@ docker rmi 46102226f2fd
 ### 1.docker 删除容器
 docker rm 9a05ec6db2b1
 
+### 1.docker build包
+docker build -t docker_test:latest .
+
 

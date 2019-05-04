@@ -1,9 +1,5 @@
-FROM
+FROM hub.c.163.com/library/tomcat
 
-MAINTAINER XXX XXX@imooc.com
+MAINTAINER 大兵哥 940422068@imooc.com
 
-ADD target/*.jar app.jar
-
-EXPOSE 8080
-
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+COPY docker_test.war /usr/local/tomcat/webapps/
